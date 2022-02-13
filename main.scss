@@ -62,6 +62,9 @@ a {
 ul {
     list-style: none;
 }
+h2 {
+    font-weight: 400;
+}
 /*****************
 header
 ******************/
@@ -149,6 +152,32 @@ footer {
         article:nth-child(3),
         article:nth-child(4) {
         flex: 0 0 18%;
+        }
+    }
+}
+/*****************
+whatNew
+******************/
+.whatNew {
+    @include bgImg(80vh);
+    background-image: url(img/whats-new.jpg);
+    padding-left: 15%;
+    @include flex(flex-start, center, row, wrap);
+    color: $white;
+    article:first-child {
+        h2 {
+            transform: rotate(-90deg);
+            letter-spacing: 4px;
+            font-size: 3.5rem;
+        }
+    }
+    article:last-child {
+        h2 {
+            font-size: 3.5rem;
+        }
+        p {
+            line-height: 4;
+            font-size: 1.8rem;
         }
     }
 }
