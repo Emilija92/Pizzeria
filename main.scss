@@ -62,7 +62,7 @@ a {
 ul {
     list-style: none;
 }
-h2 {
+h1,h2,h3,h4,h5 {
     font-weight: 400;
 }
 /*****************
@@ -178,6 +178,21 @@ whatNew
         p {
             line-height: 4;
             font-size: 1.8rem;
+        }
+    }
+}
+/*****************
+format
+******************/
+.format {
+    @include flex(space-between, center, row, wrap);
+    width: 80%;
+    margin: 80px auto;
+    article {
+        flex: 0 0 30%;
+        h3 {
+            color: $accents;
+            font-size: 2rem;
         }
     }
 }
