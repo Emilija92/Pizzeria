@@ -205,7 +205,7 @@ menu
 ******************/
 .menu {
     @include bgImg(80vh);
-    background-image:linear-gradient(rgba($black,.5), rgba($black,.5)), url(img/menu.jpg);
+    background-image:linear-gradient(rgba($black,.5), rgba($black,.5)), url(img/header-pizza-cut.jpg);
     @include flex(flex-start, center, row, wrap);
     div {
         margin-left: 15%;
@@ -418,6 +418,12 @@ contact
                     margin-bottom: 15px;
                     font-size: 1rem;
                     font-family: sans-serif;
+                    outline: none;
+                }
+                input:focus {
+                    background: $primary;
+                    border: 2px solid $accents;
+                    color: $accents;
                 }
                 input[type="text"] {
                     flex: 0 0 49%;
@@ -431,17 +437,24 @@ contact
                     margin-bottom: 15px;
                     font-size: 1rem;
                     font-family: sans-serif;
+                    outline: none;
+                }
+                textarea:focus {
+                    background: $primary;
+                    border: 2px solid $accents;
+                    color: $accents;
                 }
                 input[type="submit"] {
                     flex: 0 0 100%;
                     @include btn;
                     border: 2px solid $accents;
+                    color: $accents;
+                    background: $primary;
                     text-align: center;
                     font-size: 1.3rem;
-                    color: $primary;
                     &:hover {
-                        border: 2px solid $accents;
-                        color: $accents;
+                        border: 2px solid $white;
+                        color: $white;
                         background: $primary;
                     }
                 }
@@ -497,6 +510,71 @@ team
                 margin: 10px;
                 &:hover {
                     color: $accents;
+                }
+            }
+        }
+    }
+}
+/*****************
+blog
+******************/
+.blog {
+    background: $primary;
+    padding: $padding;
+    .container {
+        @include flex(space-between, flex-start, row, wrap);
+        article {
+            flex: 0 0 50%;
+            img {
+                width: 100%;
+                display: block;
+            }
+            .text {
+                padding: 30px;
+                border: 2px solid $accents;
+                h2 {
+                    color: $white;
+                    font-size: 2.5rem;
+                    margin-bottom: 20px;
+                }
+                p {
+                    color: $white;
+                    font-size: 1.2rem;
+                }
+                button {
+                    @include btn;
+                    font-size: 1rem;
+                    background: $primary;
+                    color: $white;
+                    border: 1px solid $accents;
+                    margin-top: 20px;
+                    &:hover {
+                        background: $primary;
+                        color: $accents;
+                        border: 1px solid $accents
+                    }
+                }
+            }
+        }
+        aside {
+            flex: 0 0 39%;
+            border: 2px solid $accents;
+            padding: 30px;
+            h3 {
+                font-size: 2.5rem;
+                color: $white;
+                margin-bottom: 30px;
+            }
+            ul {
+                li {
+                    margin-bottom: 15px;
+                   a {
+                    font-size: 1.3rem;
+                    color: $white;
+                    &:hover {
+                        color: $accents;
+                    }
+                   }
                 }
             }
         }
