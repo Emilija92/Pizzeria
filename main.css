@@ -488,4 +488,152 @@ masterClass
   background: #000;
   color: #ffb901;
 }
+
+/*****************
+gallery
+******************/
+.gallery {
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  background-image: url(img/bg.jpg);
+  padding: 80px 0;
+}
+
+.gallery h2 {
+  color: #ffb901;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery .images img {
+  display: block;
+  width: 100%;
+}
+
+.gallery .images .one {
+  background-image: url(img/slika1.jpg);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+
+.gallery .images .two {
+  background-image: url(img/slika2.jpg);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18%;
+          flex: 0 0 18%;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+
+.gallery .images .three {
+  background-image: url(img/slika3.jpg);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+
+.gallery h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  width: 50%;
+  margin: auto;
+  padding: 80px 0 40px 0;
+}
+
+.gallery .icons {
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery .icons article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+}
+
+.gallery .icons article:first-child {
+  color: #fff;
+  line-height: 2;
+}
+
+.gallery .icons article:last-child {
+  color: #fff;
+}
+
+.gallery .icons article:last-child h4 {
+  font-size: 1.3rem;
+}
+
+.gallery .icons article:last-child i {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.gallery .icons article:last-child i:hover {
+  background: #ffb901;
+  color: #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.gallery .icons article:last-child .link {
+  font-size: 1.3rem;
+  color: #ffb901;
+}
+
+.gallery .icons article:last-child .link:hover {
+  color: #000;
+}
 /*# sourceMappingURL=main.css.map */
