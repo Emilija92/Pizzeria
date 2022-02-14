@@ -771,4 +771,83 @@ contact
   color: #ffb901;
   background: #242424;
 }
+
+/*****************
+about
+******************/
+.about {
+  padding: 80px 0;
+}
+
+.about article {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.about article h2 {
+  color: #ffb901;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about article p {
+  font-size: 1.2rem;
+}
+
+/*****************
+team
+******************/
+.team {
+  padding: 80px 0;
+  background: #242424;
+  text-align: center;
+}
+
+.team .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team .container article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.team .container article img {
+  width: 80%;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 20px #ffb901;
+          box-shadow: 10px 20px #ffb901;
+}
+
+.team .container article h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  color: #ffb901;
+}
+
+.team .container article a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.team .container article a:hover {
+  color: #ffb901;
+}
 /*# sourceMappingURL=main.css.map */

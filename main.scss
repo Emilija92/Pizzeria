@@ -449,3 +449,56 @@ contact
         }
     }
 }
+/*****************
+about
+******************/
+.about {
+    padding: $padding;
+    article {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        h2 {
+            color: $accents;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+/*****************
+team
+******************/
+.team {
+    padding: $padding;
+    background: $primary;
+    text-align: center;
+    .container {
+        @include flex(space-between, center, row, wrap);
+        article {
+            flex: 1;
+            img {
+                width: 80%;
+                border-radius: 50%;
+                // display: block;
+                // margin: auto;
+                box-shadow: 10px 20px $accents;
+            }
+            h3 {
+                font-size: 2rem;
+                margin-top: 30px;
+                color: $accents;
+            }
+            a {
+                color: $white;
+                font-size: 2rem;
+                margin: 10px;
+                &:hover {
+                    color: $accents;
+                }
+            }
+        }
+    }
+}
