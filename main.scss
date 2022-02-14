@@ -65,6 +65,10 @@ ul {
 h1,h2,h3,h4,h5 {
     font-weight: 400;
 }
+.container {
+    width: 80%;
+    margin: auto;
+}
 /*****************
 header
 ******************/
@@ -388,6 +392,58 @@ gallery
                 color: $accents;
                 &:hover {
                     color: $black;
+                }
+            }
+        }
+    }
+}
+/*****************
+contact
+******************/
+.contact {
+    background: $primary;
+    padding: $padding;
+    .container {
+        @include flex(space-between, center, row, wrap);
+        article {
+            flex: 0 0 48%;
+            @include flex(center, center, column, wrap);
+            img {
+                width: 90%;
+            }
+            form {
+                @include flex(space-between, center, row, wrap);
+                input {
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    font-size: 1rem;
+                    font-family: sans-serif;
+                }
+                input[type="text"] {
+                    flex: 0 0 49%;
+                }
+                input[type="email"] {
+                    flex: 0 0 100%;
+                }
+                textarea {
+                    flex: 0 0 100%;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    font-size: 1rem;
+                    font-family: sans-serif;
+                }
+                input[type="submit"] {
+                    flex: 0 0 100%;
+                    @include btn;
+                    border: 2px solid $accents;
+                    text-align: center;
+                    font-size: 1.3rem;
+                    color: $primary;
+                    &:hover {
+                        border: 2px solid $accents;
+                        color: $accents;
+                        background: $primary;
+                    }
                 }
             }
         }
