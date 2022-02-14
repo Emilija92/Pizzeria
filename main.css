@@ -333,7 +333,7 @@ menu
   padding: 0 30px;
   margin-bottom: 20px;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .menu div h3 {
@@ -370,5 +370,122 @@ menu
   font-size: 1.5rem;
   border-radius: 5px;
   margin-left: 10px;
+}
+
+/*****************
+concept
+******************/
+.concept {
+  background: #242424;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.concept h2 {
+  color: #ffb901;
+  font-size: 3rem;
+}
+
+.concept p {
+  padding: 30px 0;
+}
+
+.concept span {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+/*****************
+masterClass
+******************/
+.masterClass {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-image: url(img/slika1.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.masterClass div {
+  margin-right: 10%;
+}
+
+.masterClass div h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.masterClass div article {
+  background: #ffb901;
+  padding: 50px 10px;
+  color: #fff;
+}
+
+.masterClass div article p:nth-child(1) {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.masterClass div article p:nth-child(2) {
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.masterClass div article p:nth-child(3),
+.masterClass div article p:nth-child(4) {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.masterClass div button {
+  background: #ffb901;
+  padding: 10px 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  text-align: right;
+  color: #fff;
+  cursor: pointer;
+  width: 250px;
+  height: 50px;
+  border: none;
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  float: right;
+}
+
+.masterClass div button:hover {
+  background: #fff;
+  color: #000;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  border: 3px solid #000;
+}
+
+.masterClass div button:hover {
+  background: #000;
+  color: #ffb901;
 }
 /*# sourceMappingURL=main.css.map */
