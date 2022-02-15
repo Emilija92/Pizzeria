@@ -722,4 +722,45 @@ RESPONSIVE
             }
         }
     }
+    .blog {
+        .container {
+            article {
+                flex: 0 0 100%;
+            }
+            aside {
+                flex: 0 0 100%;
+            }
+        }
+    }
+    .team {
+        .container {
+            article {
+                flex: 0 0 100%;
+                img {
+                    width: 50%;
+                }
+            }
+            article:nth-child(1),
+            article:nth-child(2) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .contact {
+        .container {
+            article {
+                flex: 0 0 100%;
+            }
+            article:first-child {
+                display: none;
+            }
+            article:last-child {
+                form {
+                    input[type="text"] {
+                        flex: 0 0 100%;
+                    }
+                }
+            }
+        }
+    }
 }

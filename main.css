@@ -1123,5 +1123,40 @@ RESPONSIVE
     text-align: center;
     margin-bottom: 20px;
   }
+  .blog .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .blog .container aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .team .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .team .container article img {
+    width: 50%;
+  }
+  .team .container article:nth-child(1),
+  .team .container article:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .contact .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .contact .container article:first-child {
+    display: none;
+  }
+  .contact .container article:last-child form input[type="text"] {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
